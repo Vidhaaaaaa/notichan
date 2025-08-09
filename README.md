@@ -43,6 +43,3 @@ Currently in active development, features and integrations will expand over time
 ## Status
 
 🚧 **Work in progress** — features may change.
-
-
-I can also make a **“full” README template** ready for when you finish the project, so you just fill in details later.
