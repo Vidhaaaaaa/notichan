@@ -13,13 +13,13 @@ def get_gmail_service():
     # created automatically when the authorization flow completes for the first
     # time.
     if os.path.exists("token.json"):
-        creds = Credentials.from_authorized_user_file("token.json", SCOPES)
+        creds = Credentials.from_authorized_user_file(r".\notichan\token.json", SCOPES)
     # If there are no (valid) credentials available, let the user log in.
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file("credentials.json", SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file(r".\notichan\credentials.json", SCOPES)
             creds = flow.run_local_server(port=0)
 
         # Save the credentials for the next run
@@ -73,7 +73,7 @@ def fetch_unread_emails(service):
         messages.append({
             "id": msg_id,
             "date": msg_date,
-            "from_": msg_from,
+            "from": msg_from,
             "subject": msg_subject,
             "snippet": snippet,
         })
