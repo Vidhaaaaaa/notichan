@@ -1,4 +1,5 @@
-from handlers.gmail_handler import get_gmail_service, fetch_unread_emails, mark_as_read
+from NotnotichanBot import notichan_text_sender
+import asyncio
 
-service  = get_gmail_service()
-emails  = fetch_unread_emails(service)
+if __name__ == "__main__":
+    asyncio.run(notichan_text_sender())
