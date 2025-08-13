@@ -1,3 +1,4 @@
+btw yes, i meant "refactor" in my commit messages. "refractor" just sounds cooler
 
 # NotiChan – Email to Telegram Bot
 
@@ -7,9 +8,9 @@ NotiChan is a small Python tool that checks your Gmail and Outlook inbox for unr
 
 ## Features
 
-* Fetch unread emails from **Gmail** and **Outlook**
-* Sends them to your **Telegram** chat automatically
-* Simple, lightweight, and easy to customize
+- Fetch unread emails from **Gmail** and **Outlook**
+- Sends them to your **Telegram** chat automatically
+- Simple, lightweight, and easy to customize
 
 ---
 
@@ -26,10 +27,10 @@ cd notichan
 
 ```bash
 # Create venv
-python -m venv venv  
+python -m venv venv
 
 # Activate venv (Windows)
-venv\Scripts\activate  
+venv\Scripts\activate
 
 # Activate venv (Mac/Linux)
 source venv/bin/activate
@@ -71,10 +72,11 @@ python main.py
 
 ## Automation
 
-* **Local:** Use Windows Task Scheduler to run `main.py` at your desired time.
-* **Cloud:** Use a VPS or Railway with a cron job to run the script automatically.
+- **Local:** Use Windows Task Scheduler to run `main.py` at your desired time.
+- **Cloud:** Use a VPS or Railway with a cron job to run the script automatically.
 
 ---
+
 ## File Structure
 
 ```
@@ -91,8 +93,7 @@ notichan/
 
 ## Final Notes
 
-* For Gmail, you’ll need API credentials from Google Cloud Console.
-* For Outlook, make sure IMAP is enabled and credentials are correct.
-* Tested on Python 3.10+.
-* Add your `credentials.json` for Gmail in the project root.
-
+- For Gmail, you’ll need API credentials from Google Cloud Console.
+- For Outlook, make sure IMAP is enabled and credentials are correct.
+- Tested on Python 3.10+.
+- Add your `credentials.json` for Gmail in the project root.
