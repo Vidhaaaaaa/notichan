@@ -9,10 +9,10 @@ server = os.getenv("IMAP_ADDRESS")
 user = os.getenv("OUTLOOK_USER")
 password = os.getenv("USER_PASSWORD")
 
+messages = []
+
 # function to fetch unread emails from outlook as a list of dictionaries
 def fetch_unread_emails_outlook():
-
-    messages = []
 
     # opening mailbox with 'with' so that it closes itself even if there are any other errors
     with MailBox(server).login(user, password) as mailbox:
