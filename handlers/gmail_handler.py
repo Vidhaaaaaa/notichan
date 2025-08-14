@@ -8,7 +8,7 @@ import base64
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
 
-load_dotenv(dotenv_path=r".\notichan\.env")
+load_dotenv(dotenv_path=r".\.env")
 
 gmail_creds = os.getenv("GMAIL_CREDS")
 
